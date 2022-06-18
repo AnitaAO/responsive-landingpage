@@ -6,103 +6,180 @@
 
 body {
   font-size: 18px;
+  
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 24px;
+  padding: 20px;
+  position: relative;
+  
 }
 
 .nav-btn {
-    background-color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 20px;
-  }
-  
-  main {
-    background-image: url("assets/images/bg-hero-desktop.svg");
-  }
-  
-
-
-
-.hero-section {
-  display: flex;
-  flex-direction: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px 24px;
+  background-color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
 }
 
-.left-hero {
-  flex: 50%;
+@media screen and (max-width: 1440px) {
+  main {
+    background-image: url("assets/images/bg-hero-desktop.svg");
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;  
+  }
+
+  .hero-section {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 24px;
+  }
+  
+  .left-hero {
+    flex: 50%;
+  }
+
+  .right-hero{
+    flex: 50%;
+  }
+
+  .right-hero img {
+    width: 500px;
+    height: 360px;
+  }
+
+  .grow-together-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .grow-together-container img {
+    width: 500px;
+    height: 360px;
+  }
+  
+  .flowing-conversations-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flowing-conversations-container img {
+    width: 500px;
+    height: 360px;
+  }
+  
+  .your-users-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: gray;
+    border-radius: 2rem;
+  }
+  
+  .your-users-container img {
+    width: 500px;
+    height: 360px;
+  }
+  
+}
+
+@media screen and (max-width: 375px) {
+  .logo {
+    width: 150px;
+    height: 32px;
+  }
+
+  main {
+    background-image: url("assets/images/bg-hero-mobile.svg");
+  }
+
+  .grow-together-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .grow-together-container img {
+    width: 300px;
+    height: 200px;
+  }
+  
+  .flowing-conversations-container {
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flowing-conversations-container img {
+    width: 300px;
+    height: 200px;
+  }
+  
+  .your-users-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: gray;
+    border-radius: 2rem;
+  }
+  
+  .your-users-container img {
+    width: 700px;
+    height: 500px;
+  }
+  
 }
 
 .brand-message {
-    padding-bottom: 24px;
-  }
-
-  h1 {
-    padding-bottom: 24px;
-  }
-
-  .hero-btn {
-    background-color: #ff9bdb;
-    border: none;
-    border-radius: 20px;
-    padding: 8px 32px;
-    color: white;
-  }
-
-.right-hero {
-  flex: 50%;
+  padding-bottom: 24px;
 }
 
-.right-hero img {
-  width: 700px;
-  height: 500px;
+h1 {
+  padding-bottom: 24px;
+}
+
+.btn {
+  background-color: #ff9bdb;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 32px;
+  color: white;
 }
 
 .features {
   padding: 40px 24px;
 }
 
-.grow-together-container {
-  display: flex;
-  justify-content: space-between;
+.cta-group{
+  width: fit-content;
+  background-color: white;
+  border: 1px solid grey;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+  
 }
 
-.grow-together-container img {
-  width: 700px;
-  height: 500px;
+footer{
+  background-color: black;
+  color: white;
 }
 
-.flowing-conversations-container {
+.map-contents{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.flowing-conversations-container img {
-  width: 700px;
-  height: 500px;
-}
-
-.your-users-container {
+.phone-contents{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: gray;
-  border-radius: 2rem;
 }
 
-.your-users-container img {
-  width: 700px;
-  height: 500px;
+.email-contents{
+  display: flex;
 }
-
-

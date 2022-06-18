@@ -1,18 +1,8 @@
-.logo {
-  width: 150px;
-  height: 32px;
-}
 
-.nav-btn {
-  background-color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 20px;
-}
 
-main {
-  background-image: url("assets/images/bg-hero-desktop.svg");
-}
+
+
+
 
 .hero-section {
   display: block;
