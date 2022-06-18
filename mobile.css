@@ -1,0 +1,79 @@
+.logo {
+  width: 150px;
+  height: 32px;
+}
+
+.nav-btn {
+  background-color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+}
+
+main {
+  background-image: url("assets/images/bg-hero-desktop.svg");
+}
+
+.hero-section {
+  display: block;
+  padding: 24px 16px;
+  justify-content: center;
+  text-align: center;
+}
+
+.brand-message {
+  padding-bottom: 24px;
+}
+
+h1 {
+  padding-bottom: 24px;
+}
+
+.hero-btn {
+  background-color: #ff9bdb;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 32px;
+  color: white;
+}
+
+.right-hero img {
+  width: 300px;
+  height: 300px;
+  padding: 40px 0;
+}
+
+.features {
+  padding: 24px 16px;
+}
+
+.grow-together-container {
+  display: block;
+}
+
+.grow-together-container .grow-together-messages {
+  padding-bottom: 24px;
+}
+
+.grow-together-container img {
+  width: 300px;
+  height: 300px;
+}
+
+.flowing-conversations-container {
+  display: block;
+}
+
+.flowing-conversations-container img {
+  width: 300px;
+  height: 300px;
+}
+
+.your-users-container {
+  display: block;
+}
+
+.your-users-container img {
+  width: 300px;
+  height: 300px;
+}

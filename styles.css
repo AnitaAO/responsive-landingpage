@@ -1,12 +1,108 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.nav-btn{
+body {
+  font-size: 18px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 24px;
+}
+
+.nav-btn {
+    background-color: white;
     padding: 10px;
     border: none;
     border-radius: 20px;
+  }
+  
+  main {
+    background-image: url("assets/images/bg-hero-desktop.svg");
+  }
+  
+
+
+
+.hero-section {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 24px;
 }
+
+.left-hero {
+  flex: 50%;
+}
+
+.brand-message {
+    padding-bottom: 24px;
+  }
+
+  h1 {
+    padding-bottom: 24px;
+  }
+
+  .hero-btn {
+    background-color: #ff9bdb;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 32px;
+    color: white;
+  }
+
+.right-hero {
+  flex: 50%;
+}
+
+.right-hero img {
+  width: 700px;
+  height: 500px;
+}
+
+.features {
+  padding: 40px 24px;
+}
+
+.grow-together-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grow-together-container img {
+  width: 700px;
+  height: 500px;
+}
+
+.flowing-conversations-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flowing-conversations-container img {
+  width: 700px;
+  height: 500px;
+}
+
+.your-users-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: gray;
+  border-radius: 2rem;
+}
+
+.your-users-container img {
+  width: 700px;
+  height: 500px;
+}
+
 
