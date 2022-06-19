@@ -6,47 +6,59 @@
 
 body {
   font-size: 18px;
-  
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 24px;
   position: relative;
-  
+}
+
+.logo {
+  width: 150px;
+  height: 32px;
 }
 
 .nav-btn {
   background-color: white;
-  padding: 10px;
+  padding: 8px 32px;
   border: none;
   border-radius: 20px;
 }
 
 @media screen and (max-width: 1440px) {
   main {
-    background-image: url("assets/images/bg-hero-desktop.svg");
     position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;  
   }
 
   .hero-section {
     display: flex;
     flex-direction: wrap;
+    background-image: url("assets/images/bg-hero-desktop.svg");
+    background-color: #edfbfe;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 24px;
-  }
-  
-  .left-hero {
-    flex: 50%;
+    padding: 0 24px;
+    margin-top: -80px;
+    z-index: -1;
   }
 
-  .right-hero{
+  .left-hero {
     flex: 50%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .right-hero {
+    flex: 50%;
+    padding-top: 100px;
+    padding-bottom: 50px;
   }
 
   .right-hero img {
@@ -58,90 +70,150 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 25px 0;
   }
-  
+
   .grow-together-container img {
     width: 500px;
     height: 360px;
   }
-  
+
   .flowing-conversations-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 25px 0;
   }
-  
+
   .flowing-conversations-container img {
     width: 500px;
     height: 360px;
   }
-  
+
   .your-users-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: gray;
-    border-radius: 2rem;
+    margin: 25px 0;
   }
-  
+
   .your-users-container img {
     width: 500px;
     height: 360px;
-  } 
+  }
+
+  .cta-group {
+    background-color: white;
+    width: max-content;
+    text-align: center;
+    padding: 25px 50px;
+    position: relative;
+    margin-bottom: -30px;
+    margin-left: 40%;
+    justify-content: center;
+    border: 1px solid #f8f5f5;
+    border-radius: 10px;
+    box-shadow: 2px 3px 4px 1px #c4c4c4;
+  }
 }
 
 @media screen and (max-width: 375px) {
-  .logo {
-    width: 150px;
-    height: 32px;
+  main {
+    position: relative;
   }
 
-  main {
+  .hero-section {
+    display: block;
     background-image: url("assets/images/bg-hero-mobile.svg");
+    background-color: #edfbfe;
+    /* position: relative; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin-top: -80px;
+    /* z-index: -2; */
+  }
+
+  .left-hero {
+    block-size: 100%;
+    text-align: center;
+  }
+
+  .right-hero {
+    block-size: 100%;
+  }
+
+  .right-hero img {
+    width: 320px;
+    height: 240px;
   }
 
   .grow-together-container {
+    margin: 15px 0;
     display: block;
-    justify-content: space-between;
     align-items: center;
   }
-  
+
+  .grow-together-messages {
+    block-size: 100%;
+  }
+
   .grow-together-container img {
-    width: 300px;
-    height: 200px;
+    block-size: 100%;
+    width: 320px;
+    height: 240px;
   }
-  
+
   .flowing-conversations-container {
+    margin: 15px 0;
     display: block;
-    justify-content: space-between;
     align-items: center;
   }
-  
+
+  .flowing-conversations-messages {
+    block-size: 100%;
+  }
+
   .flowing-conversations-container img {
-    width: 300px;
-    height: 200px;
+    block-size: 100%;
+    width: 320px;
+    height: 240px;
   }
-  
+
   .your-users-container {
+    margin: 15px 0;
     display: block;
-    justify-content: space-between;
     align-items: center;
-    border: gray;
-    border-radius: 2rem;
   }
-  
+
   .your-users-container img {
-    width: 700px;
-    height: 500px;
+    width: 320px;
+    height: 240px;
   }
-  
+
+  .cta-group {
+    background-color: white;
+    width: max-content;
+    text-align: center;
+    padding: 15px 25px;
+    position: relative;
+    margin-bottom: -30px;
+    margin-left: 10%;
+    justify-content: center;
+    border: 1px solid #f8f5f5;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #c4c4c4;
+  }
 }
 
 .brand-message {
   padding-bottom: 24px;
 }
 
-h1 {
+h2 {
   padding-bottom: 24px;
 }
 
@@ -154,32 +226,110 @@ h1 {
 }
 
 .features {
-  padding: 40px 24px;
+  padding: 50px 24px;
 }
 
-.cta-group{
-  width: fit-content;
-  background-color: white;
-  border: 1px solid grey;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  
+.grow-together-container {
+  padding: 15px;
+  position: relative;
+  border: 1px solid #f8f5f5;
+  border-radius: 10px;
+  box-shadow: 2px 3px 4px 1px #c4c4c4;
 }
 
-footer{
+.grow-together-messages{
+  padding-bottom: 15px;
+}
+
+.grow-together-container h3, p{
+  padding-bottom: 8px;
+}
+
+.flowing-conversations-container{
+  padding: 15px;
+  position: relative;
+  border: 1px solid #f8f5f5;
+  border-radius: 10px;
+  box-shadow: 2px 3px 4px 1px #c4c4c4;
+}
+
+.flowing-conversations-messages{
+  padding-bottom: 15px;
+}
+.flowing-conversations-container h3, p{
+  padding-bottom: 8px;
+}
+
+.your-users-container{
+  padding: 15px;
+  position: relative;
+  border: 1px solid #f8f5f5;
+  border-radius: 10px;
+  box-shadow: 2px 3px 4px 1px #c4c4c4;
+}
+
+.your-users-messages{
+  padding-bottom: 15px;
+}
+
+.your-users-container h3, p{
+  padding-bottom: 8px;
+}
+
+footer {
   background-color: black;
+  padding: 100px 20px 24px;
   color: white;
 }
 
-.map-contents{
+footer img{
+  padding-bottom: 24px;
+}
+
+.footer-contents{
+  display: flex;
+  flex-direction: wrap;
+}
+
+.footer-contents .address{
+  flex: 45%;
+}
+.about{
+  display: inline-block;
+}
+
+.footer-contents .about, .contact{
+  flex: 15%;
+}
+
+.footer-contents .social{
+  flex: 25%;
+}
+
+.map-contents {
   display: flex;
 }
 
-.phone-contents{
+.map-contents img{
+  padding-right: 24px;
+}
+
+.phone-contents {
   display: flex;
 }
 
-.email-contents{
+.phone-contents img{
+  padding-right: 24px;
+}
+
+.email-contents {
   display: flex;
+}
+
+.email-contents img{
+  padding-right: 24px;
+}
+
+.fa-facebook{
+  color: white;
 }

@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Landing Page</title>
-    <link media="screen and (max-width: 1440px)" rel="stylesheet" href="styles.css" />
-    <link media="screen and (max-width: 375px)" rel="stylesheet" href="mobile.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
   <body>
     <header>
@@ -20,11 +20,11 @@
       <div class="hero-section">
         <div class="left-hero">
           <div class="brand-message">
-            <h1>Build The Community <br />Your Fans Will Love</h1>
+            <h2>Build The Community Your Fans Will Love</h2>
             <p>
-              Huddle re-imagines the way we build communities. You have <br />
-              a voice, but so does your audience. Create connections with <br />
-              your users as you engage in genuine discussion.
+              Huddle re-imagines the way we build communities. You have a voice,
+              but so does your audience. Create connections with your users as
+              you engage in genuine discussion.
             </p>
           </div>
           <button class="btn">Get Started For Free</button>
@@ -36,36 +36,48 @@
 
       <section>
         <div class="features">
-            <div class="grow-together-container">
-                <div class="grow-together-messages">
-                    <h3>Grow Together</h3>
-                    <p>Generate meaningful discussions with your audience and 
-                        build a strong, loyal community. Think of the insightful
-                        conversations you miss out on with a feedback form
-                    </p>
-                </div>
-                <img src="assets/images/illustration-grow-together.svg" alt="Image for grow together">
+          <div class="grow-together-container" id="grow-together">
+            <div class="grow-together-messages">
+              <h3>Grow Together</h3>
+              <p>
+                Generate meaningful discussions with your audience and build a
+                strong, loyal community. Think of the insightful conversations
+                you miss out on with a feedback form
+              </p>
             </div>
-            <div class="flowing-conversations-container">
-                <img src="assets/images/illustration-flowing-conversation.svg" alt="Image for flowing conversations">
-                <div class="flowing-conversations-messages">
-                    <h3>Flowing Conversations</h3>
-                    <p>You wouldn’t paginate a conversation in real life, so why do 
-                        it online? Our threads have just-in-time loading for a more 
-                        natural flow.
-                    </p>
-                </div>
+            <img
+              src="assets/images/illustration-grow-together.svg"
+              alt="Image for grow together"
+            />
+          </div>
+          <div class="flowing-conversations-container">
+            <img
+              src="assets/images/illustration-flowing-conversation.svg"
+              alt="Image for flowing conversations"
+            />
+            <div class="flowing-conversations-messages">
+              <h3>Flowing Conversations</h3>
+              <p>
+                You wouldn’t paginate a conversation in real life, so why do it
+                online? Our threads have just-in-time loading for a more natural
+                flow.
+              </p>
             </div>
-            <div class="your-users-container">
-                <div class="your-users-messages">
-                    <h3>Your Users</h3>
-                    <p>It takes no time at all to integrate Huddle with your app’s 
-                        authentication solution. This means, once signed in to
-                        your app, your users can start chatting immediately.
-                    </p>
-                </div>
-                <img src="assets/images/illustration-your-users.svg" alt="Image for your users">
+          </div>
+          <div class="your-users-container">
+            <div class="your-users-messages">
+              <h3>Your Users</h3>
+              <p>
+                It takes no time at all to integrate Huddle with your app’s
+                authentication solution. This means, once signed in to your app,
+                your users can start chatting immediately.
+              </p>
             </div>
+            <img
+              src="assets/images/illustration-your-users.svg"
+              alt="Image for your users"
+            />
+          </div>
         </div>
       </section>
 
@@ -77,40 +89,43 @@
       </section>
     </main>
     <footer>
-      <div>
-        <div>
-            <img class="logo" src="assets/images/logo.svg" alt="Site Logo" />
-            <div class="map-contents">
-                map icon
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam in dignissimos aperiam veritatis odit laborum iusto recusandae, earum, ex et accusantium saepe molestiae hic illum quam sunt eum, repellendus distinctio?</p>
-            </div>
-            <div class="phone-contents">
-                phone icon
-                <p>+1-543-123-4565</p>
-            </div>
-            <div class="email-contents">
-                email icon
-                <p>joy@me.com</p>
-            </div>
+      <img class="logo" src="assets/images/logo.svg" alt="Site Logo" />
+      <div class="footer-contents">
+        <div class="address">
+          <div class="map-contents">
+            <img src="assets/images/icon-location.svg" alt="location icon" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam in dignissimos aperiam veritatis odit laborum iusto
+              recusandae, earum, ex et accusantium saepe molestiae hic illum
+              quam sunt eum, repellendus distinctio?
+            </p>
+          </div>
+          <div class="phone-contents">
+            <img src="assets/images/icon-phone.svg" alt="phone icon" />
+            <p>+1-543-123-4565</p>
+          </div>
+          <div class="email-contents">
+            <img src="assets/images/icon-email.svg" alt="email icon" />
+            <p>joy@me.com</p>
+          </div>
         </div>
-        <div>
-            <a>About Us</a>
-            <a>What We do</a>
-            <a>FAQ</a>
+        <div class="about">
+          <a>About Us</a><br><br>
+          <a>What We do</a><br><br>
+          <a>FAQ</a>
         </div>
-        <div>
-            <a>Career</a>
-            <a>Blog</a>
-            <a>Contact Us</a>
+        <div class="contact">
+          <a>Career</a><br><br>
+          <a>Blog</a><br><br>
+          <a>Contact Us</a>
         </div>
-        <div>
-            <div>
-                facebook ion, twitter icon, youtube icon
-            </div>
-            <p>C copyright 2018 Huddie. All rights reserved</p>
+        <div class="social">
+          <div>
+            <i class="fa-duotone fa-camera-retro" style="color: #1c7ed6;"></i> <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-instagram"></i></div><br><br><br><br>
+          <p>C copyright 2018 Huddie. All rights reserved</p>
         </div>
       </div>
     </footer>
   </body>
 </html>
-
