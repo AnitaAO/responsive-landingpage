@@ -87,8 +87,7 @@ nav {
   .your-users-container img {
     width: 500px;
     height: 360px;
-  }
-  
+  } 
 }
 
 @media screen and (max-width: 375px) {
@@ -102,7 +101,7 @@ nav {
   }
 
   .grow-together-container {
-    display: flex;
+    display: block;
     justify-content: space-between;
     align-items: center;
   }
@@ -113,6 +112,7 @@ nav {
   }
   
   .flowing-conversations-container {
+    display: block;
     justify-content: space-between;
     align-items: center;
   }
@@ -123,7 +123,7 @@ nav {
   }
   
   .your-users-container {
-    display: flex;
+    display: block;
     justify-content: space-between;
     align-items: center;
     border: gray;
